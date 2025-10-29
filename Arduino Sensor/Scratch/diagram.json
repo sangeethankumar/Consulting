@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "Sangeetha Nandakumar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -9, "left": 57, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -114.9, "left": -34.2, "attrs": {} },
+    { "type": "wokwi-gas-sensor", "id": "gas1", "top": 194.7, "left": -146.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "dht1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "dht1:GND", "uno:GND.2", "black", [ "v0" ] ],
+    [ "dht1:SDA", "uno:2", "green", [ "v0" ] ],
+    [ "gas1:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "gas1:GND", "uno:GND.2", "black", [ "h0" ] ],
+    [ "gas1:AOUT", "uno:A0", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}

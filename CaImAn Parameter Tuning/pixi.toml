@@ -1,0 +1,15 @@
+[workspace]
+authors = ["Sangeetha Nandakumar <98574336+sangeethankumar@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "CaImAn Parameter Tuning"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.9.*"
+pip = ">=25.2,<26"
+
+[pypi-dependencies]
+suite2p = { version = ">=0.14.6, <0.15", extras = ["gui"] }

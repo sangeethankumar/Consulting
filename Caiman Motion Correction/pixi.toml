@@ -1,0 +1,13 @@
+[workspace]
+authors = ["Sangeetha Nandakumar <98574336+sangeethankumar@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "Caiman Motion Correction"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.11.*"
+pip = ">=25.2,<26"
+vs2019_win-64 = ">=19.29.30139,<20"
